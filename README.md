@@ -1,18 +1,15 @@
-# Clone of Koovs.com
+Clone of Koovs
 
 
-This is the clone of Koovs.com ,which we made during the UNIT II construct week. We made this website functional as well.
 
 
-![Clone of Koovs.com](https://miro.medium.com/max/875/1*9_Dsv9Wl1PStg6CtJnJFZg.jpeg)
-
-## Technologies Used :
+Languages :
 * HTML
 * CSS
 * JavaScript
 
 
-## Functional Things :
+Functions:
 * User Signup Page.
 * User Login Page.
 * Products Page.
@@ -21,25 +18,14 @@ This is the clone of Koovs.com ,which we made during the UNIT II construct week.
 * Multiple Images view on Hovering over images on Products page & Quick view Page.
 
 
-### Responsive Pages
+Responsive Pages
 * Products Page
 * Quick View Page
 * Payments Page
 * Cart Page
 
 
-## Getting Started :
-
-
-### Prerequisites 
-* VS Code
-
-
-### Installation 
-* Clone the repository
-    ``` 
-    git clone https://github.com/ShubhSinghal05/koovs.git
-    ```
+ 
 ### Website Flow
 * Landing page is the Homepage of Website.
 
@@ -47,7 +33,7 @@ This is the clone of Koovs.com ,which we made during the UNIT II construct week.
 
 * Login Page/SignUp Page
 
-    ![koovs.com login page/signup page](https://i.imgur.com/bPA0nx6.gif)
+    
 * Products Page
 
   
@@ -55,10 +41,6 @@ This is the clone of Koovs.com ,which we made during the UNIT II construct week.
 * Cart
 * Payments Page
 
-## Contributors :
-* Saurabh Nimkande
-* Shubham Singhal
-* Sarang Gunjal
-* Pankaj Kumar
-
+Developed by:
+Vikyath Shetty B
 

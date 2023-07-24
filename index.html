@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Online Shopping-Shop for clothing,Shoes & Accessories</title>
+    
+    
+    
+    
+    
+</head>
+<style>
+    * {
+           
+            font-family: 'Lato', sans-serif;
+        }
+    .cursor{
+        cursor: pointer;
+    }
+       #navbar{
+           display: flex;
+           justify-content: space-between;
+           height: 123px;
+           background-color: white;
+           width: 96%;
+          
+           padding: 8px;
+           text-align: center;
+       }
+       .nav-koovs-logo{
+           width: 20%;
+           margin: 5px 0;
+       }
+       .nav-section{
+           margin-top: 4%;
+       }
+       .navbar-mid span{
+           margin: 13px;
+       }
+       .navbar-container{
+           width: 30%;
+       }
+       .navbar-right-top{
+           display: flex;
+           
+           padding: 3px;
+       }
+       .navbar-right-top > div{
+           margin: 0 5%;
+       }
+       .navbar-right-login{
+           display: flex;
+       }
+       
+       .navbar-mid{
+           width: 70%;
+           text-align: center;
+           margin-left: 17%;
+       }
+       .nav-icon{
+           width: 23px;
+           height: 23px;
+           margin: 1%;
+       }
+       .nav-icons{
+           margin: 2%;
+       }
+      .navbar-right-bottom{
+          display: flex;
+      }
+      .search-box{
+           margin-right: 13%;
+           outline: none;
+           border: none;
+
+       }.search-bar{
+           margin:0 44px 0 0;
+           height: 14px;
+           width: 14px;
+       }
+       .search-item{
+           display: inline-flex;
+       }
+                  
+       .hline{
+           width: 100%;
+         border: 1px solid rgb(230, 224, 224);
+       }
+
+       .footer{
+    background-color:#ECEFF1 ;
+}
+.footer-txt{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3%;
+
+}
+
+.bottom-container{
+    display: flex;
+    margin: 0 4%;
+   
+}
+.categorys,.brand{
+    width: 22%;
+
+}
+.contact,.help{
+    width: 19%;
+}
+.category-list,.brand-list{
+    display: flex;
+
+}
+.category-list div,.brand-list div{
+    width: 47%;
+}
+.store{
+    width: 65%;
+    height: 40px;
+    margin: 8px 0;
+
+}
+.social-logo{
+    display: flex;
+}
+.social{
+    width: 25px;
+    height: 25px;
+    margin: 5%;
+}
+.social img{
+    color: black;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+.category-txt{
+    font-weight: 700;
+}
+        
+    #heading {
+        /* place-self: center; */
+        /* border: 1px solid black; */
+
+        /* height: 40px; */
+        padding: 1px;
+        
+        /* margin-left: 40%;  */
+    }
+
+    #brandName {
+        justify-content: center;
+        /* border:1px solid red; */
+
+        display: flex;
+        flex-direction: row;
+        /* grid-column: 50px 50px 50px 50px; */
+        gap: 20px;
+        font-family: sans-serif;
+    }
+
+    .category {
+        display: grid;
+        /* grid:repeat(2, 60); */
+        grid-template-areas: "a a a a a";
+        grid-auto-columns: 100px;
+        /* display:flex;
+    flex-direction: row; */
+        /* margin-top: 100px; */
+        gap: 3%;
+        /* margin-right: ; */
+        justify-content: center;
+        font-family: sans-serif;
+    }
+
+    .top {
+        height: 20%;
+        /* border:1px solid red; */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin: 30px;
+        font-family: sans-serif;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .slidingBar {
+        height: 130px;
+        /* border:1px solid red; */
+        gap: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin: 30px;
+        font-family: sans-serif;
+        background-image: url("https://images.ctfassets.net/hrltx12pl8hq/7lsvbVzapVyUoCuaHbyu9P/7f8e315ef310bc35d45aac5f5b7777e3/shutterstock_83060329.jpg?fit=fill&w=800&h=300");
+    }
+
+    .textonimage {
+        margin-left: 29%;
+        margin-top: 1%;
+        color: rgb(6, 6, 7);
+        font-size: 50px;
+        font-family: sans-serif;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40% 40%;
+        /* border:5px solid green;  */
+        height: 1900px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin: 30px;
+        font-family: sans-serif;
+        row-gap: 45px;
+        
+        /* margin-top: 10px; */
+
+    }
+
+    .incontent {
+        width: 100%;
+        height: 100%
+    }
+
+    .mid {
+        height: 320px;
+        /* border:10px solid red;  */
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: sans-serif;
+        margin: 30px;
+        margin-top: 280px;
+        background-image: url("https://images.ctfassets.net/hrltx12pl8hq/7lsvbVzapVyUoCuaHbyu9P/7f8e315ef310bc35d45aac5f5b7777e3/shutterstock_83060329.jpg?fit=fill&w=800&h=300");
+    }
+
+    .mid1 {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        /* grid-template-rows: 50%; */
+        /* border:5px solid green;  */
+        height: 200px;
+        padding: 20px;
+        font-family: sans-serif;
+    }
+
+    .textonimage2 {
+        margin-left: 30%;
+        margin-top: 1%;
+        color: rgb(6, 6, 7);
+        font-size: 60px;
+        font-family: sans-serif;
+    }
+
+    .textonimage1 {
+        margin-left: 35%;
+        margin-top: 1%;
+        color: rgb(6, 6, 7);
+        font-size: 60px;
+        font-family: sans-serif;
+    }
+
+    .textonimage3 {
+        margin-left: 38%;
+        margin-top: 1%;
+        color: rgb(6, 6, 7);
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    .btn {
+        margin-left: 44%;
+        margin-top: 1%;
+        color: rgb(6, 6, 7);
+        font-size: 20px;
+        border-radius: 19px;
+        font-family: sans-serif;
+    }
+
+    .bottom {
+        height: 950px;
+        /* border:1px solid red; */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin: 30px;
+        margin-top: 65px;
+        font-family: sans-serif;
+    }
+
+    .bottomTittle {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        font-style: italic;
+        font-family: sans-serif;
+    }
+
+    .bottomRow {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        /* grid-template-rows: 50%; */
+        /* border:5px solid green;  */
+        height: 300px;
+        /* width: 100%; */
+        column-gap: 5.5%;
+        padding: 21px;
+        font-family: sans-serif;
+    }
+
+    .btmImg {
+        width: 100%;
+        height:100%;
+        /* margin-left: 2%; */
+
+    }
+    .bottomRowContent{
+        margin-top: 120px;
+        /* margin-left: 5%;
+        margin-right: 5%;
+        margin: 10px;
+        /* display: grid;
+        grid-template-columns: 20% 20% 20% 20%; */ 
+/* text-align: center; */
+font-family: sans-serif;
+margin-left: 6%;
+font-size:20px;
+
+    }
+    @media(max-width:800px){
+        .category{
+            display:flex;
+            flex-direction: column;
+            width:90%;
+            margin:8%;
+            gap: 5%;
+            font-family: sans-serif;
+            
+        }
+    }
+    @media(max-width:800px){
+        .top{
+            display:flex;
+            flex-direction: column;
+            width:90%;
+            margin:8%;
+            font-family: sans-serif;
+            gap: 5%;
+            
+        }
+    }
+    @media(max-width:800px){
+        .slidingBar{
+            display:flex;
+            font-family: sans-serif;
+            /* flex-direction: column; */
+            width:90%;
+            margin:8%;
+            gap: 5%;
+            font-size:10px;
+            height:55%;
+            
+        }
+    }
+    @media(max-width:800px){
+        .textonimage{
+            margin-left:15%;
+            font-family: sans-serif;
+        }
+    }
+    @media (max-width:800px){
+.content{
+    display:flex;
+    flex-direction:column;
+    font-family: sans-serif;
+    width:92%;
+    margin:8%;
+    gap: 2%;
+}
+    }
+    @media (max-width:600px){
+.mid{
+    display:flex;
+    flex-direction:column;
+    font-family: sans-serif;
+    width:90%;
+   margin-top: 170%;
+   /* border: 1px solid red; */
+   font-size:3px;
+   height:400px;
+   gap:5%;
+}
+    }
+    @media(max-width:600px){
+        .textonimage1{
+            margin-left: 7%;
+            font-family: sans-serif;
+            width: 100%;
+        }
+    }
+    @media(max-width:600px){
+        .textonimage2{
+            margin-left: 7%;
+            font-family: sans-serif;
+            width: 100%;
+        }
+    }
+    @media(max-width:600px){
+        .textonimage3{
+            margin-left: 7%;
+            width: 100%;
+            font-family: sans-serif;
+        }
+        .footer{
+            width: 100%;
+            margin-top: auto;
+        }
+        .footer-hr{
+            margin-top: 160%;
+        }
+    }
+    @media(max-width:600px){
+        .btn{
+            margin-left: 22%;
+            width: 50%;
+            font-family: sans-serif;
+        }
+    }
+    @media(max-width:800px){
+        .mid1{
+            display:flex;
+            flex-direction: column;
+            width:80%;
+            font-family: sans-serif;
+            margin:8%;
+            gap: 10%;
+            margin-top: 20%;
+            height:250px; 
+            
+        }
+    }
+    @media(max-width:800px){
+        .bottom{
+            display:flex;
+            flex-direction: column;
+            width:90%;
+            margin:8%;
+            gap: 5%;
+            font-family: sans-serif;
+            margin-top: 260%;
+            height:750px; 
+            
+        }
+        .footer-hr{
+            margin-top: 160%;
+        }
+    }
+    @media(max-width:800px){
+        .bottomRow{
+            display:flex;
+            flex-direction: column;
+            width:50%;
+            margin:17%;
+            font-family: sans-serif;
+            gap: 5%;
+            margin-top: 5%;
+            
+        }
+    }
+    a:link {
+        color: black;
+        text-decoration:none;
+        }
+        a:visited {
+        color: black;
+        }
+        a:hover {
+        color: black;
+        }
+        a:active {
+        color: black;
+        }
+    
+    
+</style>
+
+<body>
+    <div id="navbar">
+        <div class="navbar-mid">
+            <div>
+                <b><h1 class="create-account cursor" style="font-size:2.25rem;" onclick="homepage()" id="navhead">koovs</h1></b>
+                
+
+            </div>
+            <div class="nav-section">
+          <span id="text-bold3" class="create-account cursor" onclick="productpage()" mouseover="textsizeBold()">  <span >MEN</span><span>WOMEN</span> <span>THE BLOG</span><span>KOOVSXYOU</span><span>IN STYLE OF</span></span>
+          </div>
+        </div>
+     <div class="navbar-riht-container">
+        
+            <div class="navbar-right-top" >
+                <div class="navbar-right-login">
+                    <div class="login cursor" onclick="login2()">Login</div>&nbsp;
+                    <span class="signup cursor" onclick="signup2()">|&nbsp;Sign&nbsp;Up</span>
+                </div>
+               
+              <div class="nav-icons cursor"><img class="nav-icon"onclick="wishlistalert()" src="./img/wishlist.jpeg" alt=""> <h6>WISHLIST</small></h6></div> 
+              <div class="nav-icons cursor"><img class="nav-icon"onclick="cartalert()" src="./img/shopping-bag.png" alt=""> <h6>BAG</small></h6>  </div>
+             
+            </div>
+           
+
+            <div class="search-item">
+                <input class="search-box" type="text"placeholder="search for products,brands">
+                <img class=" search-bar" src="./img/search-icon.png" alt="">
+            </div>
+        <hr>
+
+    </div>
+       
+</div>
+<div class="hline"></div>
+    
+   <div class="top"> <a href="productpage.html">
+        <img id="topImg" src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/08/30/10/onlineshoppingclothing.jpg?width=968&auto=webp&quality=75&crop=968%3A645%2Csmart"
+            alt="Sliding images" />
+        </a>
+    </div>
+    <div class="slidingBar">
+        <div>.</div>
+        <a href="productpage.html">
+        <div class="textonimage">TOP BRANDS</div>
+    </a>
+    </div>
+    <a href="productpage.html">
+    <div class="content">
+        <img src=".\img\boomrangg.webp" />
+        <img src=".\img\kdenim01.webp" />
+        <img class="incontent" src=".\img\koovs-15july221220-158.webp"/>
+        <img class="incontent" src=".\img\pants-01.webp" />
+        <img class="incontent" src=".\img\KOOVS_20OCT22-3576-310.webp" />
+        <img class="incontent" src=".\img\KOOVS_20OCT22-3360-210.webp"/>
+    </div>
+    
+</a>
+<a href="productpage.html">
+    <div class="mid">
+        <div>.</div>
+        <div class="textonimage1">SHOP FOR 1999</div>
+        <div class="textonimage2"> & GET INR 200 OFF</div>
+        <div class="textonimage3">USE CODE : SAVE200</div>
+        <button class="btn">SHOP NOW</button>
+    </div>
+</a>
+<a href="productpage.html">
+    <div class="bottomTittle">
+        BRANDS
+    </div>
+    <div class="mid1">
+        <img src=".\img\1.avif" />
+        <img src=".\img\3.avif" />
+        <img src=".\img\2.avif"/>
+        <img src=".\img\4.avif" />
+        <img src=".\img\5.avif" />
+    </div>
+</a>
+    <div class="bottom">
+        <img id="bottomImg" src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/08/30/10/onlineshoppingclothing.jpg?width=968&auto=webp&quality=75&crop=968%3A645%2Csmart"
+            alt="Sliding images" />
+    </div>
+    
+</a>
+    <!-- <div class="bottomRowContent">
+        <p>Men's Loungewear Guide</p>
+        <button>READ MORE</button>
+    </div> -->
+<br><br>
+<hr class="footer-hr">
+    <div class="footer">
+        <div class="footer-txt">
+            <h5 class="cursor">ABOUT KOOVS.COM</h5>
+            <h5 class="cursor" >EXPAND</h5>
+        </div>
+   
+    <div class="bottom-container">
+        
+       
+        <div class="categorys">
+        <h5 class="category-txt">TOP CATEGORIES</h5>
+
+        <div class="category-list">
+            <div>
+               <h5 class="cursor">Dresses for Girls </h5>
+               <h5 class="cursor" >Maxi Dresses</h5>
+               <h5 class="cursor" >Tops for Girls</h5>
+               <h5 class="cursor">Women Jumpsuits</h5>
+               <h5 class="cursor" >Jeans for Girls</h5>
+               <h5 class="cursor">Trousers & Leggings</h5>
+               <h5 class="cursor">Shorts</h5>
+               <h5 class="cursor">Cardigans & Pullovers</h5>
+               <h5 class="cursor">Dungarees Dress</h5>
+               <h5 class="cursor">Long Skirts</h5>
+            </div>
+            <div>
+                <h5 class="cursor">Leggings</h5>
+                <h5 class="cursor">Girls Sweatshirts</h5>
+                <h5 class="cursor" >Blazers for Girls</h5>
+                <h5 class="cursor">Boots</h5>
+                <h5 class="cursor">Jeans for Men</h5>
+                <h5 class="cursor">Heeled Sandals</h5>
+                <h5 class="cursor">Backpacks for girls</h5>
+                <h5 class="cursor">Shoes for Men</h5>
+                <h5 class="cursor">Sling Bags</h5>
+                <h5 class="cursor" >Sweaters for Girls</h5>
+                
+            </div>
+        </div>
+    </div>
+        <div class="brand">
+            <h5 class="category-txt">TOP BRANDS</h5>
+            <div class="brand-list">
+                <div>
+                    <h5 class="cursor">KOOVS</h5>
+                    <h5 class="cursor">New Look</h5>
+                    <h5 class="cursor">Forever New</h5>
+                    <h5 class="cursor">Brave Soul</h5>
+                    <h5 class="cursor">Noble Faith</h5>
+                    <h5 class="cursor" >Nike</h5>
+                    <h5 class="cursor">AX Paris</h5>
+                </div>
+               <div>
+                <h5 class="cursor" >Glamorous</h5>
+                <h5 class="cursor">Femella</h5>
+                <h5 class="cursor">Vero Moda</h5>
+                <h5 class="cursor">Only</h5>
+                <h5 class="cursor" >Adidas Originals</h5>
+                <h5 class="cursor">Koovs Coupons & Offers</h5>
+                
+               </div>
+            </div>
+        </div>
+        <div class="help">
+            <h5 class="category-txt">NEED HELP ?</h5>
+            <div class="brand-list">
+                <div>
+                    <h5 class="cursor">Contact Us</h5>
+                    <h5 class="cursor">Track Order</h5>
+                    <h5 class="cursor">Returns Policy</h5>
+                    <h5 class="cursor" >Shipping Information</h5>
+                    <h5 class="cursor">FAQs</h5>
+                    <h5 class="cursor">Terms and Conditions</h5>
+                    <h5 class="cursor">Privacy Policy</h5>
+                </div>
+               
+            </div>
+        </div>
+        <div class="contact">
+            <h5 class="category-txt">CONTACT US</h5>
+            <div class="brand-list">
+                <div>
+                    <h5 class="cursor">+91-124-6770000</h5>
+                    <h5 class="cursor">care@koovs.com</h5>
+                   
+                </div>
+               
+            </div>
+        </div>
+
+    <div>
+        <div>
+            <h5 class="category-txt" >DOWNLOAD OUR APP</h5>
+            <div>
+               <img class="store cursor" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBEQACEQEDEQH/xAAbAAEAAwADAQAAAAAAAAAAAAAABQYHAgMEAf/EADsQAAEDAgMCBhICAwAAAAAAAAEAAgMEBRESMQZBIVFhgbLRBxMUFSIkMkJUVXFzdJGSk6GxF8EzUvD/xAAaAQEAAwEBAQAAAAAAAAAAAAAABAUGAgMB/8QAMxEAAQMCAgQNBQEBAAAAAAAAAAECAwQRBXESITHBExUiQVFSYYGRobHR8BQjMjNT4XL/2gAMAwEAAhEDEQA/ANpQBAEAQBAEAQBAEAQBAEAQBAEAQDBAMEAQBAEAQBAEAQBAQG0V/wC97u5qXKakjFzjwhg61YUdFwyab/x9SmxPE/p14KL8vT/SqS3WvldmkrJyeR5b+ArdtNC3Y1DNvral63dIvjb0scO+FX6ZU/ed1rrgY+qngef1E/8AR3ivuO76z0up+87rTgY+qngPqKj+jvFfcd8Kz0yp+87rTgI+qngPqKj+jvFfcC4VgOIrKn7zutOAj6qeA+pqP6O8VJK27S1lLI0VDzUQ+c13lD2HrUWbD43pyUspYUuL1ETk4RdJvn3L7l3gmjqIWTRODo3gOaeMKic1WuVq7UNdHI2RiPat0U7FydhAEAQGXXOd09yq5HnEumd8gcB+AFq4GI2JqJ0GDqnLJO9y9KnmzL1PDRPhelhYtlTsdIO5+5antmdwEpcMA0f7DjHIqiPE0XS0226PYvZMDXk6Dr32+6EXtHaWWeohjjmdK2Rhd4QGIwPIpVHUrO1VVLWIOIULaR6Na690IjMppA0RmQWL1sVMZbOWHSKVzR+D/az+Jt0Z79KGswV6uptHoVffeWBV5bhAEAGo9qAyOrd43P71/SK18f4NyT0MHKn3HZr6nVm5V2cWGYbygsaZs9JNS7NwzXJ4Y2OMvzHVse7HlwWYq2tfUq2JOfzNhQueyka6ZdieXNco+0ctXLdXy10ZifI1rmMJ8lh0H7x5cVe0aRthRrFvb1M3XrI6dXSJZV2Zc3zpIvNyqUQ7DNyoLF62AONqqPiD0Wqhxb9zct6mmwP9Dv8ArchZ1VlyEAQAahFBjtW7xuo96/pFbKNOQmSGIlT7js19TqzLuxxokzspau+10a2RuNNDg+biI3N5/wBAqFXVHARatq7CbQUnDy8pOSmtfYntvb12t0VspziQRJOMcODzW8+vyVfhdNe8zsk3qWOK1NrQtzXch7tqqCO92SO4UPhyRM7bGRq9h4SP+3heNDKtNOsb9i6u898QgbVQJIzamtMuczoOBWjsZrRGYJY+WL92PDjaan4k9Fqz+L/ublvU0eCp9l2e5C0qqLgIAgA1CKDF6x3jlR71/SK2sachuSGMkTluzX1LvYdmLHW2qnqZ6h0ssjA55E2UNdvbgOLRUlTX1McrmolkTsLmmw+lfEjlW9+0s1ot9ttEDoaJzWtc7M4ukxJPtVbPLLO7SeWUEEUDdFhG1OytjqaiWomkkfLI4ucTUakqSyvqWNRrU1J2EZ+HUz3K521e052nuay3BlniqDJBUNdLTh7gSxw8puO8HUc64n06iPh1TWmpdy/Ow7gRlO9IUXUutN6HCo2NsTpHSSNkjzuJwExA4eHgC7ZiVSiWTXbsOHYZSqt1Tb2lB2jpKW3XealoZu2wtAIJdjlJ1bjvV7SSPlhR8iWUo6uFkUysYt0Lf2ODjaKr4o9Bqp8Y/c3Lepb4P+l2e5C2KpLYIAgA1CAxGvJbX1QOonfj9RW3i1xtyQyEjfuOzX1J7YGhpK+9uNZ2t3aY87In4eG7TnwH9KBisskUFmc/zzJmHQsfNd/MefbWe3y3t8dtghYyFuSR8QAEj9+nBwafNd4ayVIEWRVW/T0fNZxX8E6azETUQOI4grCxC0E6Dsp6iSmnjngdkkjcHscNxGi5exHtVrtinbLsVHN2oaVdamh2l2Lkq5HMjfCwycJ/xytHk8+nKCs1AySjrUYmtF1ZopfTOjqqRXLq58lQzIOw0C09jP6Jo/Y0B7y1JOhqjh9LVm8Z/e3LepfYSloXZ7kLcqgtAgCAIDJNtrXJbL5O/Ie56pxlifuxPC4e0HHmwWtw2obNAiX1pqXcZ2tgWOVV5lK/n4irCxEsMyWFhmSwsMyWFhm4MNyWFj6CXENYCXE4BoGJJ4gvi2RNYtrNh2Rtj7TYoKecYTuJklHE47uYYDmWPr50nnVzdmxDSUcKxQo1dpMqGSQgCAIDz19DS3GmdTVsLJoXatd+wdx5QvSKV8TtNi2U4fG2Rui5LoVao7HVqkeXQ1VZCD5oc1wHzGKtGY1OicpqL8zITsNiVdSqh0/xvQ+sav6WdS748l6ieZzxYzrL87h/G9D6xq/pZ1Jx5L1E8xxYzrL87h/G9D6xq/pZ1Jx5L1E8xxYzrL87j6OxvQb7hWcwZ1Jx3LzMTzHFkfWX53E1ZdlLVZ5RPBC6SoGk0zszh7Nw+Sg1GIT1CaLlsnQhJhpIoluiaycUIkhAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEB//2Q==" alt="">
+               <img class="store cursor" src="https://helios-i.mashable.com/imagery/articles/04EZglaVzAW19V6FIiDD3TA/hero-image.fill.size_1200x1200.v1623363034.jpg" alt="">
+           </div>
+           <h5 class="category-txt" >CONNECT WITH US</h5>
+           <div class="social-logo">
+           
+           <img class="social cursor" src="data:image/png;base64,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" alt="">
+           <img class="social cursor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="">
+           <img class="social cursor" src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" alt="">
+        </div>
+    </div>
+        
+    </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+let arr=[
+       "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+       "https://img.freepik.com/free-photo/beautiful-asian-woman-carrying-colorful-bags-shopping-online-with-mobile-phone_8087-3877.jpg?size=626&ext=jpg",
+    //    "https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603__340.jpg",
+    
+      
+       "http://images.unsplash.com/photo-1592840054664-6bc0f6fbc3d6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+       "https://media.istockphoto.com/photos/boutique-shoes-in-a-store-picture-id1152527286?b=1&k=20&m=1152527286&s=170667a&w=0&h=PWHvKF77V94Wk7eIVEo9bxSVg-ybU8dJR6UXG3fRa5k=",
+];
+let count=0;
+let abc=document.getElementById("topImg")
+var abcd = setInterval(function(){
+abc.src=arr[count++];
+if(count==4){
+    count=0;
+}
+},3000);
+
+let data=[
+
+       "https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/08/30/10/onlineshoppingclothing.jpg?width=968&auto=webp&quality=75&crop=968%3A645%2Csmart",
+       "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+      "https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHBpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+    "https://images.unsplash.com/photo-1604467794349-0b74285de7e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+];
+let counter=0;
+let imgSl=document.getElementById("bottomImg");
+var sliding = setInterval(function(){
+imgSl.src=data[counter++];
+if(counter==4){
+    counter=0;
+}
+},4000);
+
+function login2()
+	{
+		window.location.href = "Login.html";	
+	}
+	
+	function signup2()
+	{
+		window.location.href = "signup1.html";	
+	}
+    function productpage(){
+        window.location.href="productpage.html"
+    }
+    function homepage(){
+    window.location.href="index.html"
+}
+function textsizeBold(){
+    var textsizeBold=document.getElementById("text-bold3")
+    textsizeBold.style.fontWeight="1000"
+}
+</script>

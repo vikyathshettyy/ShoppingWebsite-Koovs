@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koovs:Login Customer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://images.koovs.com/uploads/koovs/kv-favicon.ico"> 
+
+   <style>
+       
+       
+       body{
+           
+           font-family: sans-serif;
+           background-color: white;
+       }
+       #navbar{
+           display: flex;
+           justify-content: space-between;
+           height: 110px;
+           background-color: white;
+          position: sticky;
+          top: 0;
+
+           padding: 5px;
+           text-align: center;
+       }
+       .nav-koovs-logo{
+           width: 20%;
+           margin: 5px 0;
+       }
+       .nav-section{
+           margin-top: 4%;
+       }
+       .navbar-mid span{
+           margin: 13px;
+       }
+       .navbar-container{
+           width: 30%;
+       }
+       .navbar-right-top{
+           display: flex;
+           
+           padding: 3px;
+       }
+       .navbar-right-top > div{
+           margin: 0 5%;
+       }
+       .navbar-right-login{
+           display: flex;
+       }
+       
+       .navbar-mid{
+           width: 70%;
+           text-align: center;
+           margin-left: 17%;
+       }
+       .nav-icon{
+           width: 23px;
+           height: 23px;
+           margin: 1%;
+       }
+       .nav-icons{
+           margin: 2%;
+       }
+      .navbar-right-bottom{
+          display: flex;
+      }
+      .search-box{
+           margin-right: 13%;
+           outline: none;
+           border: none;
+
+       }.search-bar{
+           margin:0 44px 0 0;
+           height: 14px;
+           width: 14px;
+       }
+       .search-item{
+           display: inline-flex;
+       }
+                  
+       .hline{
+           width: 100%;
+         border: 1px solid rgb(230, 224, 224);
+       }
+        
+        #myform{
+    
+      width: 33%;
+      box-shadow: 1px 2px 11px 3px rgba(189,174,174,0.75);
+     -webkit-box-shadow: 1px 2px 11px 3px rgba(189,174,174,0.75);
+    -moz-box-shadow: 1px 2px 11px 3px rgba(189,174,174,0.75);
+    background: #fff;
+    padding: 29px;
+    text-align: center;
+    margin: 50px auto;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    }
+    .loginOption{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    .loginIcon{
+        width: 25px;
+        height: 25px;
+        margin: 8%;
+    }
+    
+    .loginOptionBtn{
+        display: flex;
+        width: 40%;
+        border: 1px solid lightgray;
+        align-items: center;
+        margin-right: 5px;
+        padding-right: 20px;
+        height: 45px;
+        cursor: pointer;
+        
+    }
+    .login-bottom{
+        font-size: small;
+    }
+    .create-account{
+        cursor: pointer;
+    }
+    .new-koovs{
+        font-weight: 600;
+        margin-left: 30px;
+    }
+    
+
+    
+    .form-txt{
+        margin: auto;
+        padding: 3px;
+    }
+    .form-txt2{
+        width: 35%;
+        font-weight: 900;
+    }
+    .text-box{
+   
+        width: 98%;
+        border-radius: 5px;
+        padding: 15px 0 15px 4px;
+        margin: 20px 10px 20px 0;
+        border: 1px solid #999;
+        outline: none;
+    }
+.btn{
+    width: 60%;
+    color: #fff;
+    padding: 22px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signup-btn{
+    background-color: black;
+    margin: 30px;
+}
+
+h1{
+    color:black;
+    text-align: center;
+}
+h6{
+    font-size: 7px;
+
+}
+h5{
+    font-size: 12px;
+    font-weight: 400;
+}
+.footer{
+    background-color:#ECEFF1 ;
+}
+.footer-txt{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3%;
+
+}
+
+.bottom-container{
+    display: flex;
+    margin: 0 4%;
+   
+}
+.category,.brand{
+    width: 22%;
+
+}
+.contact,.help{
+    width: 19%;
+}
+.category-list,.brand-list{
+    display: flex;
+
+}
+.category-list div,.brand-list div{
+    width: 47%;
+}
+.store{
+    width: 90%;
+    height: 40px;
+    margin: 8px 0;
+
+}
+.social-logo{
+    display: flex;
+}
+.social{
+    width: 25px;
+    height: 25px;
+    margin: 5%;
+    background-color: black;
+}
+.social img{
+    color: black;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+.category-txt{
+    font-weight: 700;
+}
+.cursor{
+    cursor: pointer;
+}
+@media screen and (max-width:720px){
+    .loginOption{
+        width: 100%;
+        display: block;
+    }
+    .loginOptionBtn{
+        width: 86%;
+        margin-bottom: 5px;
+    }
+    .iconTxt{
+        font-size: 14px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div class="navbar-mid">
+            <div>
+                <b><h1 class="create-account cursor" style="font-size:2.25rem;" onclick="homepage()" id="navhead">koovs</h1></b>
+                
+
+            </div>
+            <div class="nav-section">
+          <span id="text-bold3" class="create-account cursor" onclick="productpage()" mouseover="textsizeBold()">  <span >MEN</span><span>WOMEN</span> <span>THE BLOG</span><span>KOOVSXYOU</span><span>IN STYLE OF</span></span>
+          </div>
+        </div>
+     <div class="navbar-riht-container">
+        
+            <div class="navbar-right-top" >
+                <div class="navbar-right-login">
+                    <div class="login cursor" onclick="login2()">Login</div>&nbsp;
+                    <span class="signup cursor" onclick="signup2()">|&nbsp;Sign&nbsp;Up</span>
+                </div>
+               
+              <div class="nav-icons cursor"><img class="nav-icon"onclick="wishlistalert()" src="./img/wishlist.jpeg" alt=""> <h6>WISHLIST</small></h6></div> 
+              <div class="nav-icons cursor"><img class="nav-icon"onclick="cartalert()" src="./img/shopping-bag.png" alt=""> <h6>BAG</small></h6>  </div>
+             
+            </div>
+           
+
+            <div class="search-item">
+                <input class="search-box" type="text"placeholder="search for products,brands">
+                <img class=" search-bar" src="./img/search-icon.png" alt="">
+            </div>
+        <hr>
+
+    </div>
+       
+</div>
+<div class="hline"></div>
+
+    <form onsubmit="signup(event)" id="myform" action="">
+        <h1>Log In </h1>
+        <p class="form-txt">Sign in to access your Orders, Wishlist and Recommendations</p>
+            <p class="form-txt2">Continue With </p>
+            <div class="loginOption">
+            <div class="loginOptionBtn">
+                <img class="loginIcon" src="https://cdn-icons-png.flaticon.com/512/281/281764.png">
+                <h4 class="iconTxt" >Google</h4>
+            </div>
+            <div class="loginOptionBtn fbBtn">
+                <img class="loginIcon" src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="">
+                <h4 class="iconTxt">Facebook</h4>
+            </div>
+        </div>
+        <p class="form-txt2">Using Email </p>
+
+        <div>
+            <input type="email" id="email" class="text-box" placeholder="Email Address">
+        </div>
+        <div>
+            <input type="password" id="password" class="text-box" placeholder="Password">
+           </div>
+        
+        <button id="button" class="btn signup-btn">LOG IN</button>
+            
+              <div class="login-btm">
+                <span class="login-bottom create-account">Reset Password</span>
+                <span class="login-bottom new-koovs">New to koovs ? </span>  <span class="create-account" onclick="signup2()">Create Account</span>  
+                      
+              </div>
+          
+
+    
+    </form>
+    <hr>
+    <div class="footer">
+        <div class="footer-txt">
+            <h5 class="cursor">ABOUT KOOVS.COM</h5>
+            <h5 class="cursor" >EXPAND</h5>
+        </div>
+   
+    <div class="bottom-container">
+        
+       
+        <div class="category">
+        <h5 class="category-txt">TOP CATEGORIES</h5>
+
+        <div class="category-list">
+            <div>
+               <h5 class="cursor">Dresses for Girls </h5>
+               <h5 class="cursor" >Maxi Dresses</h5>
+               <h5 class="cursor" >Tops for Girls</h5>
+               <h5 class="cursor">Women Jumpsuits</h5>
+               <h5 class="cursor" >Jeans for Girls</h5>
+               <h5 class="cursor">Trousers & Leggings</h5>
+               <h5 class="cursor">Shorts</h5>
+               <h5 class="cursor">Cardigans & Pullovers</h5>
+               <h5 class="cursor">Dungarees Dress</h5>
+               <h5 class="cursor">Long Skirts</h5>
+            </div>
+            <div>
+                <h5 class="cursor">Leggings</h5>
+                <h5 class="cursor">Girls Sweatshirts</h5>
+                <h5 class="cursor" >Blazers for Girls</h5>
+                <h5 class="cursor">Boots</h5>
+                <h5 class="cursor">Jeans for Men</h5>
+                <h5 class="cursor">Heeled Sandals</h5>
+                <h5 class="cursor">Backpacks for girls</h5>
+                <h5 class="cursor">Shoes for Men</h5>
+                <h5 class="cursor">Sling Bags</h5>
+                <h5 class="cursor" >Sweaters for Girls</h5>
+                
+            </div>
+        </div>
+    </div>
+        <div class="brand">
+            <h5 class="category-txt">TOP BRANDS</h5>
+            <div class="brand-list">
+                <div>
+                    <h5 class="cursor">KOOVS</h5>
+                    <h5 class="cursor">New Look</h5>
+                    <h5 class="cursor">Forever New</h5>
+                    <h5 class="cursor">Brave Soul</h5>
+                    <h5 class="cursor">Noble Faith</h5>
+                    <h5 class="cursor" >Nike</h5>
+                    <h5 class="cursor">AX Paris</h5>
+                </div>
+               <div>
+                <h5 class="cursor" >Glamorous</h5>
+                <h5 class="cursor">Femella</h5>
+                <h5 class="cursor">Vero Moda</h5>
+                <h5 class="cursor">Only</h5>
+                <h5 class="cursor" >Adidas Originals</h5>
+                <h5 class="cursor">Koovs Coupons & Offers</h5>
+                
+               </div>
+            </div>
+        </div>
+        <div class="help">
+            <h5 class="category-txt">NEED HELP ?</h5>
+            <div class="brand-list">
+                <div>
+                    <h5 class="cursor">Contact Us</h5>
+                    <h5 class="cursor">Track Order</h5>
+                    <h5 class="cursor">Returns Policy</h5>
+                    <h5 class="cursor" >Shipping Information</h5>
+                    <h5 class="cursor">FAQs</h5>
+                    <h5 class="cursor">Terms and Conditions</h5>
+                    <h5 class="cursor">Privacy Policy</h5>
+                </div>
+               
+            </div>
+        </div>
+        <div class="contact">
+            <h5 class="category-txt">CONTACT US</h5>
+            <div class="brand-list">
+                <div>
+                    <h5 class="cursor">+91-124-6770000</h5>
+                    <h5 class="cursor">care@koovs.com</h5>
+                   
+                </div>
+               
+            </div>
+        </div>
+
+    <div>
+        <div>
+             <h5 class="category-txt" >DOWNLOAD OUR APP</h5>
+             <div>
+                <img class="store cursor" src="data:image/jpeg;base64,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" alt="">
+                <img class="store cursor" src="https://helios-i.mashable.com/imagery/articles/04EZglaVzAW19V6FIiDD3TA/hero-image.fill.size_1200x1200.v1623363034.jpg" alt="">
+            </div>
+            <h5 class="category-txt" >CONNECT WITH US</h5>
+            <div class="social-logo">
+            
+            <img class="social cursor" src="data:image/png;base64,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" alt="">
+            <img class="social cursor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="">
+            <img class="social cursor" src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" alt="">
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    </div>
+
+
+</body>
+</html>
+<script>
+     var btn1=document.getElementById("button")
+    btn1.addEventListener('click',signin)
+
+    function signin(e){
+    e.preventDefault()
+    let myform=document.getElementById('myform')
+   // let name=myform.name.value
+    let email=myform.email.value
+    let password=myform.password.value
+    let allUsers=JSON.parse(localStorage.getItem('users'))
+   var flag=0 
+    allUsers.forEach(function(user){
+    if(email===user.email && password===user.password){
+        flag=1
+       return true
+//alert("logged in successfully")
+          // return true   
+    }
+})
+if(flag){
+    alert("logged in successfully")
+    loginHomePage()
+}else{
+    alert("Invalid credentials") 
+    window.location.href = "Login.html";
+}
+}
+
+function loginHomePage()
+{
+    window.location.href="index.html"
+} 
+
+function homepage(){
+    window.location.href="index.html"
+}
+function productpage(){
+    window.location.href="productpage.html"
+}
+
+    function login2()
+	{
+		window.location.href = "Login.html";	
+	}
+	
+	function signup2()
+	{
+		window.location.href = "signup1.html";	
+	}
+</script>

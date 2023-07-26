@@ -43,6 +43,5 @@ Responsive Pages
 
 Website link: https://vikyathshoppingwebsite.netlify.app/
 
-Developed by:
-Vikyath Shetty B
+
 
